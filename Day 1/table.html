@@ -1,0 +1,41 @@
+<html>
+
+<p id="clock"></p>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+<!-- <table id="dyntable"></table> -->
+
+</head>
+<body>
+<table id='dyntable'>
+    <tr id='dynrow'></tr>
+</table>
+</body>
+
+<script>
+
+        var f =0;
+        
+        /**
+        var i = setInterval(function(){
+            f +=1;
+            document.getElementById("dyntable").innerHTML += '<tr><td>'+f+'</td></tr>';
+            if(f>=100){
+                clearInterval(i);
+               return;
+            }
+        },1000)
+        **/
+        
+        for(var i=0;i<=10;i++){
+                document.getElementById("dynrow").innerHTML += '<td>'+i+'</td>';
+            }
+        
+        
+        
+</script>
+</html>
